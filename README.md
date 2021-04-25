@@ -16,12 +16,14 @@ Make sure you `cd` into the project directory.
 
 In one terminal, run `npm install` to set up dependencies. Then run `npm start` to start the React App. This is your Front-End.
 
-In another temrinal, run `json-server --watch db.json --port 4000` to start the JSON server on port 4000. If you get an error, make sure you have JSOn server installed globally by running `npm install -g json-server`. This is your Back-End.
+In another temrinal, run `json-server --watch db.json --port 4000` to start the JSON server on port 4000. If you get an error, make sure you have JSON server installed globally by running `npm install -g json-server`. This is your Back-End.
 
 ## JSON Server API
 
-If you need a refresher, see the JSON Serve documentation [here](https://github.com/typicode/json-server#getting-started).
+If you need a refresher, see the JSON Server documentation [here](https://github.com/typicode/json-server#getting-started).
 
 You will be getting pokemon data from the URL `http://localhost:4000/pokemon`.
 
-In order for your data to persist, you will be POSTing to the same URL `http://localhost:4000/pokemon`. Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the body of the request, see the data structure of the existing pokemon as an exmple.
+In order for your data to persist, you will be POSTing to the same URL `http://localhost:4000/pokemon`. 
+
+Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the body of the request, see the data structure of the existing pokemon as an exmple.
