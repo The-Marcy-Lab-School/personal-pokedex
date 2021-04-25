@@ -3,7 +3,7 @@ function PokemonForm(){
         <div>
             <h3>Add a Pokemon!</h3>
             <form className="ui form" onSubmit={() => {console.log("submitting form...")}}>
-                <div className="fields" widths="equal">
+                <div className="four fields" widths="equal">
                     <div className="field ui fluid">
                         <label>Name</label>
                         <input type="text" name="name" placeholder="Name" />
@@ -21,7 +21,7 @@ function PokemonForm(){
                         <input type="text" name="backUrl" placeholder="url" />
                     </div>
                 </div>
-                <button class="ui button" type="submit">Submit</button>
+                <button className="ui button" type="submit">Submit</button>
             </form>
         </div>
     )
