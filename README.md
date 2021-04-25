@@ -14,7 +14,7 @@ You'll be building the following project:
 
 Make sure you `cd` into the project directory.
 
-In one terminal, run `npm install` to set up dependencies. Then run `npm install` to start the React App. This is your Front-End.
+In one terminal, run `npm install` to set up dependencies. Then run `npm start` to start the React App. This is your Front-End.
 
 In another temrinal, run `json-server --watch db.json --port 4000` to start the JSON server on port 4000. If you get an error, make sure you have JSOn server installed globally by running `npm install -g json-server`. This is your Back-End.
 
