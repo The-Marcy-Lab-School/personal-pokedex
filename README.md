@@ -12,7 +12,7 @@ You'll be building the following project:
 
 ### Tip: Remember Controlled Components
 
-Every time you see a form or input of any type, store that value in state!
+Every time you see a form or input of any type, store that value in state! The started code is designed to guide you in bulding out this app. However, **you are allowed to change the code however you see fit.** If you can figure out a better or DRYer way to store state, go ahead!
 
 ## Set Up
 
