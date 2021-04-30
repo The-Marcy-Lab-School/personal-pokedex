@@ -6,9 +6,10 @@ You'll be building the following project:
 
 ## Features
 
-1. A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed!
+1. A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed. This means you'll have to make a POST request to the API!
 2. A user can use the search bar to filter pokemon by name.
 3. A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
+4. 
 
 ## Set Up
 
@@ -27,3 +28,11 @@ You will be getting pokemon data from the URL `http://localhost:4000/pokemon`.
 In order for your data to persist, you will be POSTing to the same URL `http://localhost:4000/pokemon`. 
 
 Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the body of the request, see the data structure of the existing pokemon as an exmple.
+
+### Tip" Remember Controlled Components
+
+Every time you see a form or input of any type, store that value in state!
+
+## Bonus:
+
+Add a feature to **additionally** filter pokemon by the HP amount. You can use any type of input, but we reccommend using a [range input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range).
