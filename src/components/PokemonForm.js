@@ -1,4 +1,11 @@
+import {useState} from 'react'
+
 function PokemonForm(){
+    const [name, setName] = useState("")
+    const [hp, setHp] = useState("")
+    const [frontUrl, setFrontUrl] = useState("")
+    const [backUrl, setBakUrl] = useState("")
+    
     return (
         <div>
             <h3>Add a Pokemon!</h3>
