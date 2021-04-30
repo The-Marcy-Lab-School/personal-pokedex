@@ -1,5 +1,5 @@
 import PokemonForm from './PokemonForm'
-import Search from './Search'
+import Filter from './Filter'
 import PokemonCollection from './PokemonCollection'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <br />
       <PokemonForm />
       <br />
-      <Search />
+      <Filter />
       <br />
       <PokemonCollection />
     </div>
