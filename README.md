@@ -35,4 +35,4 @@ Remember, for JSON Server, you will need to include a `Content-Type: application
 
 ## Bonus:
 
-Add a feature to **additionally** filter pokemon by the HP amount. You can use any type of input, but we reccommend using a [range input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range). Remember to store that value of the input in state!
+Add a feature to **additionally** filter pokemon by the HP amount. You can use any type of input, but we reccommend using a [range input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range). For example, if the user sets the range value to 50, only show pokemon with an HP value _over_ 50. Remember to store that value of the input in state! 
