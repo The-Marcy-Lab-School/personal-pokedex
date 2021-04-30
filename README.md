@@ -10,6 +10,10 @@ You'll be building the following project:
 2. A user can use the search bar to filter pokemon by name.
 3. A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
 
+### Tip: Remember Controlled Components
+
+Every time you see a form or input of any type, store that value in state!
+
 ## Set Up
 
 Make sure you `cd` into the project directory.
@@ -28,9 +32,6 @@ In order for your data to persist, you will be POSTing to the same URL `http://l
 
 Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the body of the request, see the data structure of the existing pokemon as an exmple.
 
-### Tip" Remember Controlled Components
-
-Every time you see a form or input of any type, store that value in state!
 
 ## Bonus:
 
