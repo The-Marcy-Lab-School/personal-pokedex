@@ -10,9 +10,13 @@ You'll be building the following project:
 2. A user can use the search bar to filter pokemon by name.
 3. A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
 
-### Tip: Remember Controlled Components
+### Tip 1: Remember Controlled Components
 
-Every time you see a form or input of any type, store that value in state! The started code is designed to guide you in bulding out this app. However, **you are allowed to change the code however you see fit.** If you can figure out a better or DRYer way to store state, go ahead!
+Every time you see a form or input of any type, store that value in state! The starter code is designed to guide you in bulding out this app. However, **you are allowed to change the code however you see fit.** If you can figure out a better or DRYer way to store state, go ahead!
+
+### Tep 2: Sprites
+
+You can find pokemon sprites in this [GitHub Repo](https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon). But you should use the raw URL. For example, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<filename>.png` and `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<filename>.pgn`
 
 ## Set Up
 
