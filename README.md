@@ -10,9 +10,10 @@ You'll be building the following project:
 1. A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed. This means you'll have to make a POST request to the API!
 2. A user can use the search bar to filter pokemon by name.
 3. A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
-4. This assignment must use Context
+4. The form must be a controlled component.
+5. This assignment must use React Context.
 
-### Tip 2: Sprites
+### Tip: Sprites
 
 You can find pokemon sprites in this [GitHub Repo](https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon). But you should use the raw URL. For example, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<filename>.png` and `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<filename>.png`
 
