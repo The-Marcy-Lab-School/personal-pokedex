@@ -7,8 +7,8 @@ You'll be building the following project:
 ## Features
 
 0. On load of the page, a user see a list of pokemon cards displaying each pokemon's name, front sprite, and HP level.
-1. A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed. This means you'll have to make a POST request to the API!
-2. A user can use the search bar to filter pokemon by name.
+1. A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed. This means you'll have to make a POST request to our JSON Server API!
+2. A user can use the search bar to filter pokemon by name. 
 3. A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
 4. The form must be a controlled component.
 5. This assignment must use React Context.
@@ -28,7 +28,7 @@ In another temrinal, run `json-server --watch db.json --port 4000` to start a mo
 
 ## JSON Server API
 
-Json Server is a tool to we use to spin up a mock API. It is a great alternative to consuming from a API when you don't have the time to build out a full Express API. It does have its limitation in that it cannot support a robust relationships database. If you need a refresher, see the JSON Server documentation [here](https://github.com/typicode/json-server#getting-started).
+JSON Server is a tool to we use to spin up a mock API. It is a great alternative to consuming from a API when you don't have the time to build out a full Express API. It does have its limitation in that it cannot support a robust relationships database. If you need a refresher, see the JSON Server documentation [here](https://github.com/typicode/json-server#getting-started).
 
 You will be getting pokemon data from the URL `http://localhost:4000/pokemon`.
 
