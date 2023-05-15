@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // TODO: Import the PokemonContext
 
-function ContextProvider({ children }) { 
+function PokemonProvider({ children }) { 
     const [pokemon, setPokemon] = useState([])
     // TODO: Add any other state values you need
 
@@ -10,7 +10,7 @@ function ContextProvider({ children }) {
 
     // TODO: Add values to be included in the context here
     let contextValues = {
-        pokemon, setPokemon
+        pokemon
     }
 
     // TODO: Wrap the {children} in the PokemonContext.Provider and provide the values above
@@ -19,4 +19,4 @@ function ContextProvider({ children }) {
     )
 }
 
-export default ContextProvider;
+export default PokemonProvider;
