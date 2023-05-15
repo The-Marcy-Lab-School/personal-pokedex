@@ -1,10 +1,14 @@
-// TODO: import and use the PokemonContext to retrieve the fetched pokemon
+import { useContext } from 'react';
+import PokemonContext from '../context/PokemonContext';
+import PokemonCard from './PokemonCard';
+
 function PokemonCollection(){
+
+    const { pokemon } = useContext(PokemonContext);
     
-    // For each fetched pokemon, render a <PokemonCard />
     return (
         <div className="ui six cards">
-            {}
+            {pokemon.map(pokemon => <PokemonCard key={pokemon.id}/>)}
         </div>
     )
 }
