@@ -1,6 +1,6 @@
-import PokemonForm from './PokemonForm'
-import Filter from './Filter'
-import PokemonCollection from './PokemonCollection'
+import PokemonForm from './components/PokemonForm'
+import Filter from './components/Filter'
+import PokemonCollection from './components/PokemonCollection'
 
 function App() {
   return (

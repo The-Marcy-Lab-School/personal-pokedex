@@ -1,3 +1,4 @@
+// TODO: Make this a controlled component. On each stroke of the key, it should filter the displayed pokemon
 function Filter(){
     return (
         <div className="ui search">
