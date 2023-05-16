@@ -91,8 +91,13 @@ You'll regularly return to this file as you build the features of this applicati
 
 For example, with a context value called `MyContext`, the rendered JSX would be:
 
+<!-- prettier-ignore -->
 ```jsx
-<MyContext.Provider value={contextValues}>{children}</MyContext.Provider>
+return (
+  <MyContext.Provider value={contextValues}>
+    {children}
+  </MyContext.Provider>
+)
 ```
 
 As you add more state values to the context, you'll add those values to `contextValues`
