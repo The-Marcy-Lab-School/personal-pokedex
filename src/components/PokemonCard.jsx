@@ -1,3 +1,4 @@
+// TODO: This component should render a single pokemon's stats and image.
 function PokemonCard(){
     return (
         <div className="ui card">
