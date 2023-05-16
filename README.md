@@ -29,7 +29,9 @@ You will be getting pokemon data from the URL `http://localhost:4000/pokemon`.
 
 In order for your data to persist, you will be POSTing to the same URL `http://localhost:4000/pokemon`.
 
-Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the `body` of the request, see the data structure of the existing pokemon as an exmple.
+Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the `body` of the request, see the data structure of the existing pokemon as an example.
+
+See the example below of sending a POST request with `fetch` and an `options` object.
 
 ```js
 const exampleOptions = {
@@ -86,13 +88,14 @@ You'll regularly return to this file as you build the features of this applicati
 1. Start by importing the `PokemonContext` you just created.
 2. Then, return a `PokemonContext.Provider`, making sure to wrap the `children` prop.
 3. Set `value` prop on the `PokemonContext.Provider` to `contextValues`.
-4. As you add more state values to the context, you'll add those values to `contextValues`
 
 For example, with a context value called `MyContext`, the rendered JSX would be:
 
 ```jsx
 <MyContext.Provider value={contextValues}>{children}</MyContext.Provider>
 ```
+
+As you add more state values to the context, you'll add those values to `contextValues`
 
 #### 3. Wrap the App in the provider
 
@@ -117,13 +120,13 @@ At this point, you should have properly linked everything up. Your application n
 
 To test this out, recall that the `PokemonCollection` component is set up to use the `pokemon` value provided by the `PokemonContext`. However, nothing is rendered yet because the `pokemon` array is empty!
 
-Head back to `src/context/PokemonContext` and modify the line where the `pokemon` state is set up. We can test that our context works by adding empty objects to the default array, like so:
+Head back to `src/context/PokemonProvider.jsx` and modify the line where the `pokemon` state is set up. We can test that our context works by adding empty objects to the default array, like so:
 
 ```jsx
 const [pokemon, setPokemon] = useState([{}, {}, {}]);
 ```
 
-Save your code, run your dev server, and you should see 3 rendered `PokemonCard` components!
+Save your code, run your dev server, and you should see 3 rendered `PokemonCard` components without any data!
 
 If this didn't work, go back through the first three steps before moving on.
 
@@ -153,14 +156,16 @@ const handleFetch = async (url, options) => {
 };
 ```
 
-Then, do the following:
+Then, do the following in your `PokemonProvider`:
 
 1. Import `useEffect`
 2. Invoke `useEffect` with a callback that fetches from your local JSON server API which should have the URL `"http://localhost:4000/pokemon"`.
 3. If data is returned, it should update the `pokemon` state value.
 4. Make sure that this effect only runs once when the application first renders.
 
-If this worked properly, you should see 12 cards. The data for these cards are not properly hooked up yet so you will need to work in the `src/components/PokemonCollection` file and the `src/components/PokemonCard` file to pass the appropriate props to each card and render them in the card.
+If this worked properly, your `PokemonProvider` will re-render with the new `pokemon` values provided. As a result, you should see 12 cards.
+
+The data for these cards are not properly hooked up yet so you will need to work in the `src/components/PokemonCollection` file and the `src/components/PokemonCard` file to pass the appropriate props to each card and render them in the card.
 
 #### You're on your own now.
 
@@ -170,7 +175,12 @@ You got this!
 
 ### Tip: Sprites
 
-You can find pokemon sprites in this [GitHub Repo](https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon). But you should use the raw URL. For example, `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<filename>.png` and `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<filename>.png`
+When posting new pokemon to the database, you'll need to include sprites for the front and back of the pokemon.
+
+You can find pokemon sprites in this [GitHub Repo](https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon). But you should use the raw URL. For example:
+
+- `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<filename>.png`
+- `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/<filename>.png`
 
 ### Bonus:
 
