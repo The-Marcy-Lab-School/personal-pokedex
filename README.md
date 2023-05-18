@@ -169,7 +169,11 @@ Then, do the following in your `PokemonProvider`:
 
 If this worked properly, your `PokemonProvider` will re-render with the new `pokemon` values provided. As a result, you should see 12 cards.
 
-The data for these cards are not properly hooked up yet so you will need to work in the `src/components/PokemonCollection` file and the `src/components/PokemonCard` file to pass the appropriate props to each card and render them in the card.
+#### 6. Fix the `PokemonCard`
+
+Open up the `src/components/PokemonCard` file and you'll see that there is a structure provided for you, but the content is incomplete. Each `PokemonCard` should display the front image of the pokemon, their name, and their HP (health points).
+
+The data for these cards are not properly hooked up yet so you will need to work in the `src/components/PokemonCollection` file to pass the appropriate props to each card and render them in the card.
 
 #### You're on your own now.
 
