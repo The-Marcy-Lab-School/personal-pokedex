@@ -1,6 +1,11 @@
 # Personal Pokedex Lab
 
-You'll be building the following project:
+Build a React front-end application for browsing your collection of pokemon. You can view the pokemon you've already "caught", add new pokemon to your collection, and filter pokemon. In this project, you will practice:
+* Using `useState` to manage the various pieces of state in your application
+* Using the React Context API to establish global state values
+* Using `useEffect` and `fetch` to read from a dummy API
+* Creating controlled components
+* Handling click events
 
 ![demo](./demo.gif)
 
