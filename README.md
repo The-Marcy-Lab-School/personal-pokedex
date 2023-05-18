@@ -79,7 +79,7 @@ const PokemonContext = createContext();
 export default PokemonContext;
 ```
 
-We simply create the `PokemonContext` so that it may be used throughout our application.
+We simply create the `PokemonContext` so that it may be used throughout our application. This `PokemonContext` object will serve as the "glue" connecting our `PokemonContext.Provider` with the components that use the context (`useContext(PokemonContext)`)
 
 #### 2. Complete the Provider component
 
