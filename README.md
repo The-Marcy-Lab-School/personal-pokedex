@@ -30,13 +30,12 @@ In another temrinal, run `json-server --watch db.json --port 4000` to start a mo
 
 JSON Server is a tool to we use to spin up a mock API. It is a great alternative to consuming from a API when you don't have the time to build out a full Express API. It does have its limitation in that it cannot support a robust relationships database. If you need a refresher, see the JSON Server documentation [here](https://github.com/typicode/json-server#getting-started).
 
-You will be getting pokemon data from the URL `http://localhost:4000/pokemon`.
+You will be GETting pokemon data from the URL `http://localhost:4000/pokemon`.
 
-In order for your data to persist, you will be POSTing to the same URL `http://localhost:4000/pokemon`.
+To create new pokemon records, you will be POSTing to the same URL `http://localhost:4000/pokemon`.
 
-Remember, for JSON Server, you will need to include a `Content-Type: application/json` header. For the `body` of the request, see the data structure of the existing pokemon as an example.
-
-See the example below of sending a POST request with `fetch` and an `options` object.
+* When POSTing, you will need to include a `Content-Type: application/json` header. For the `body` of the request, see the data structure of the existing pokemon in `db.json` as an example of what to include in the `body`.
+* See the example below of sending a POST request with `fetch` and an `options` object.
 
 ```js
 const exampleOptions = {
