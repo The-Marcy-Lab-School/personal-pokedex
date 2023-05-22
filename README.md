@@ -22,7 +22,7 @@ Build a React front-end application for browsing your collection of pokemon. You
 
 Make sure you `cd` into the project directory.
 
-In one terminal, run `npm install` to set up dependencies. Then run `npm start` to start the React App. This is your Front-End.
+In one terminal, run `npm install` to set up dependencies. Then run `npm run dev` to start the React App. This is your Front-End.
 
 In another temrinal, run `json-server --watch db.json --port 4000` to start a mock back-end server on port 4000. If you get an error, make sure you have JSON server installed globally by running `npm install -g json-server`. Now, you will have a RESTful API that you can access via the URL `http://localhost:4000/pokemon`.
 
